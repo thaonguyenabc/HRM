@@ -1,0 +1,58 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "dashboard-page;login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2530323458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user is on login page",
+            "match": {
+              "location": "src/steps/baseSteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4423420709
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 115443041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dashboard-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Dashboard Page",
+    "tags": [],
+    "uri": "src/features/loginPage.feature"
+  }
+]

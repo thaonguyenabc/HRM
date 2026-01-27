@@ -1,0 +1,23 @@
+{
+    "cucumberautocomplete.steps": "src/steps/*.ts",
+    "cucumberautocomplete.syncfeatures": "src/features/**/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "eslint.format.enable": false,
+    // Prettier is default format for TS
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Json format
+    "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+    // default format for cucumber
+    "[feature]": {
+        "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+    }
+}

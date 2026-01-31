@@ -4,12 +4,18 @@ import { CustomWorld } from "./world";
 import { BasePage } from "../pages/basePage";
 
 Before(async function (this: CustomWorld) {
+    // 1. Launch browser per scenario
     this.browser = await chromium.launch({
         headless: false,
     });
-    this.context = await this.browser.newContext();
-    this.page = await this.context.newPage();
-    this.basePage = new BasePage(this.page);
+    // 2. Create context
+    this.context = await this.browser.newContext({
+        viewport: null,
+        storageState: this.storageStatePath, // optional
+    });
+    // 3. Create page + init POM
+    const page = await this.context.newPage();
+    this.initPages(page);
 });
 
 After(async function (this: CustomWorld) {

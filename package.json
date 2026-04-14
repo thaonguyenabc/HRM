@@ -1,7 +1,7 @@
 {
-    "name": "playwright-cucumber-ts",
+    "name": "hrm-abc-automation",
     "version": "1.0.0",
-    "description": "",
+    "description": "Automation testing for HRM ABC Digital",
     "main": "index.js",
     "scripts": {
         "test": "cucumber-js --format json:report/cucumber-report.json",

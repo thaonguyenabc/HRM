@@ -4,30 +4,95 @@
     "elements": [
       {
         "description": "",
-        "id": "dashboard-page;login",
+        "id": "login-page;login-with-valid-microsoft-account",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "Login",
+        "line": 4,
+        "name": "Login with valid Microsoft account",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2530323458
+              "duration": 729209899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "user is on login page",
+            "line": 5,
+            "name": "User goes to landing page",
             "match": {
-              "location": "src/steps/baseSteps.ts:4"
+              "location": "src\\steps\\baseSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 4423420709
+              "duration": 5008553400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on login button \"Sign in with MS\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 507878999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter Microsoft email \"thao.nguyen@abcdigital.io\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1538991800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter Microsoft password \"Thao123456789@@\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1182203100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I handle stay signed in",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 974441399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should be on \"dashboard\" page",
+            "match": {
+              "location": "src\\steps\\baseSteps.ts:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 924799900
             }
           },
           {
@@ -35,24 +100,121 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 115443041
+              "duration": 247882799
             }
           }
         ],
         "tags": [
           {
             "name": "@Login",
-            "line": 7
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;login-with-invalid-password",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login with invalid password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 209639500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User goes to landing page",
+            "match": {
+              "location": "src\\steps\\baseSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5205944199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click on login button \"Sign in with MS\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 424170799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I enter Microsoft email \"thao.nguyen@abcdigital.io\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1836983199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I enter Microsoft password \"wrongpassword\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1822517400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see Microsoft error message",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141789499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 236893599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 12
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "dashboard-page",
+    "id": "login-page",
     "line": 1,
     "keyword": "Feature",
-    "name": "Dashboard Page",
+    "name": "Login Page",
     "tags": [],
-    "uri": "src/features/loginPage.feature"
+    "uri": "src\\features\\loginPage.feature"
   }
 ]

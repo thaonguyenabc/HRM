@@ -3,7 +3,7 @@
         "target": "ES2022",
         "module": "CommonJS",
         "moduleResolution": "node",
-        //"ignoreDeprecations": "6.0",
+        "ignoreDeprecations": "5.0",
         "lib": [
             "ES2022",
             "DOM"
@@ -33,10 +33,10 @@
         }
     },
     "include": [
-        "src/**/*"
-        //"src/saveAuth/saveStorage.ts"
+        "src/**/*",
+        "src/saveAuth/saveStorage.ts"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
     ]
 }

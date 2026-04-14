@@ -137,3 +137,6 @@ dist
 
 #report
 report/
+
+# Playwright auth state (chứa cookies/tokens - không commit lên git)
+.auth/

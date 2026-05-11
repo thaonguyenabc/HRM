@@ -8,12 +8,12 @@ import { TIMEOUT } from "node:dns";
 //     await this.basePage.goto(this.config.baseUrl);
 // });
 
-// Feature Login — không cần session
+
 Given("User goes to landing page", async function (this: CustomWorld) {
     await this.launchBrowserWithoutStorageSession();
 });
 
-// Feature khác — cần session, vào thẳng dashboard
+// Feature -> session -> dashboard
 Given("User goes to dashboard page", async function (this: CustomWorld) {
     await this.launchBrowserWithStorageSession();
 });

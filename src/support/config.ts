@@ -1,9 +1,13 @@
 import dotenv from "dotenv";
 
-// Load environment variables
-const result = dotenv.config();
+dotenv.config();
 
 export const config = {
     baseUrl: process.env.BASE_URL!,
-    headless: process.env.HEADLESS === "true",
+    headless: process.env.HEADLESS ? process.env.HEADLESS === "true" : true,
+
+    credentials: {
+        email: process.env.MS_EMAIL!,
+        password: process.env.MS_PASSWORD!,
+    },
 } as const;

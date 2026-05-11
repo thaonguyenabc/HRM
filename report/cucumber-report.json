@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 729209899
+              "duration": 192495700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5008553400
+              "duration": 2019813699
             }
           },
           {
@@ -36,37 +36,37 @@
             "line": 6,
             "name": "I click on login button \"Sign in with MS\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:8"
+              "location": "src\\steps\\loginSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 507878999
+              "duration": 473958999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I enter Microsoft email \"thao.nguyen@abcdigital.io\"",
+            "name": "I enter Microsoft email",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:13"
+              "location": "src\\steps\\loginSteps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1538991800
+              "duration": 1817901500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "I enter Microsoft password \"Thao123456789@@\"",
+            "name": "I enter Microsoft password",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:17"
+              "location": "src\\steps\\loginSteps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1182203100
+              "duration": 1488861399
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 9,
             "name": "I handle stay signed in",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:21"
+              "location": "src\\steps\\loginSteps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 974441399
+              "duration": 1065676599
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 924799900
+              "duration": 414566699
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 247882799
+              "duration": 293847299
             }
           }
         ],
@@ -124,7 +124,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 209639500
+              "duration": 197139700
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5205944199
+              "duration": 1504560600
             }
           },
           {
@@ -146,24 +146,24 @@
             "line": 15,
             "name": "I click on login button \"Sign in with MS\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:8"
+              "location": "src\\steps\\loginSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 424170799
+              "duration": 505478399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "I enter Microsoft email \"thao.nguyen@abcdigital.io\"",
+            "name": "I enter Microsoft email",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:13"
+              "location": "src\\steps\\loginSteps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1836983199
+              "duration": 1114173099
             }
           },
           {
@@ -172,11 +172,11 @@
             "line": 17,
             "name": "I enter Microsoft password \"wrongpassword\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:17"
+              "location": "src\\steps\\loginSteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1822517400
+              "duration": 1366093899
             }
           },
           {
@@ -185,11 +185,11 @@
             "line": 18,
             "name": "I should see Microsoft error message",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:25"
+              "location": "src\\steps\\loginSteps.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 141789499
+              "duration": 129372599
             }
           },
           {
@@ -197,7 +197,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 236893599
+              "duration": 240839700
             }
           }
         ],
@@ -205,6 +205,90 @@
           {
             "name": "@Login",
             "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;login-with-non-existing-microsoft-account",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Login with non-existing Microsoft account",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 183546500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "User goes to landing page",
+            "match": {
+              "location": "src\\steps\\baseSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1534046399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click on login button \"Sign in with MS\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 719757200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I enter Microsoft email \"abcxyz123@gamil.com\"",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1143326300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see Microsoft error message",
+            "match": {
+              "location": "src\\steps\\loginSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 316144599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 260126099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 20
           }
         ],
         "type": "scenario"

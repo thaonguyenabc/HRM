@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 192495700
+              "duration": 368000
             }
           },
           {
@@ -23,76 +23,76 @@
             "line": 5,
             "name": "User goes to landing page",
             "match": {
-              "location": "src\\steps\\baseSteps.ts:12"
+              "location": "src\\steps\\core\\baseSteps.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 2019813699
+              "duration": 1645954598
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "I click on login button \"Sign in with MS\"",
+            "name": "User clicks on login button \"Sign in with MS\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:9"
+              "location": "src\\steps\\login\\loginSteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 473958999
+              "duration": 1687515000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I enter Microsoft email",
+            "name": "User enters Microsoft email",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:14"
+              "location": "src\\steps\\login\\loginSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1817901500
+              "duration": 1895483500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "I enter Microsoft password",
+            "name": "User enters Microsoft password",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:26"
+              "location": "src\\steps\\login\\loginSteps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 1488861399
+              "duration": 1382696998
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "I handle stay signed in",
+            "name": "User handles stay signed in",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:29"
+              "location": "src\\steps\\login\\loginSteps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 1065676599
+              "duration": 1928931299
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I should be on \"dashboard\" page",
+            "name": "User should see the URL contains \"dashboard\"",
             "match": {
-              "location": "src\\steps\\baseSteps.ts:120"
+              "location": "src\\steps\\core\\baseSteps.ts:98"
             },
             "result": {
               "status": "passed",
-              "duration": 414566699
+              "duration": 1018253498
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 293847299
+              "duration": 44752700
             }
           }
         ],
@@ -124,7 +124,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 197139700
+              "duration": 152200
             }
           },
           {
@@ -133,63 +133,63 @@
             "line": 14,
             "name": "User goes to landing page",
             "match": {
-              "location": "src\\steps\\baseSteps.ts:12"
+              "location": "src\\steps\\core\\baseSteps.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 1504560600
+              "duration": 1761794200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 15,
-            "name": "I click on login button \"Sign in with MS\"",
+            "name": "User clicks on login button \"Sign in with MS\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:9"
+              "location": "src\\steps\\login\\loginSteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 505478399
+              "duration": 1616445799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "I enter Microsoft email",
+            "name": "User enters Microsoft email",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:14"
+              "location": "src\\steps\\login\\loginSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1114173099
+              "duration": 1415256199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "I enter Microsoft password \"wrongpassword\"",
+            "name": "User enters Microsoft password \"wrongpassword\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:22"
+              "location": "src\\steps\\login\\loginSteps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 1366093899
+              "duration": 1901329198
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "I should see Microsoft error message",
+            "name": "User should see Microsoft error message",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:33"
+              "location": "src\\steps\\login\\loginSteps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 129372599
+              "duration": 1062176199
             }
           },
           {
@@ -197,7 +197,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 240839700
+              "duration": 53674999
             }
           }
         ],
@@ -221,7 +221,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 183546500
+              "duration": 257600
             }
           },
           {
@@ -230,50 +230,50 @@
             "line": 22,
             "name": "User goes to landing page",
             "match": {
-              "location": "src\\steps\\baseSteps.ts:12"
+              "location": "src\\steps\\core\\baseSteps.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 1534046399
+              "duration": 1728955700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 23,
-            "name": "I click on login button \"Sign in with MS\"",
+            "name": "User clicks on login button \"Sign in with MS\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:9"
+              "location": "src\\steps\\login\\loginSteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 719757200
+              "duration": 1554555000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "I enter Microsoft email \"abcxyz123@gamil.com\"",
+            "name": "User enters Microsoft email \"abcxyz123@gamil.com\"",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:18"
+              "location": "src\\steps\\login\\loginSteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1143326300
+              "duration": 1400327298
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 25,
-            "name": "I should see Microsoft error message",
+            "name": "User should see Microsoft error message",
             "match": {
-              "location": "src\\steps\\loginSteps.ts:33"
+              "location": "src\\steps\\login\\loginSteps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 316144599
+              "duration": 1022005799
             }
           },
           {
@@ -281,7 +281,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 260126099
+              "duration": 49758399
             }
           }
         ],
@@ -299,6 +299,6 @@
     "keyword": "Feature",
     "name": "Login Page",
     "tags": [],
-    "uri": "src\\features\\loginPage.feature"
+    "uri": "src\\features\\login\\loginPage.feature"
   }
 ]

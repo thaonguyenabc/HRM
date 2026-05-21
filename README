@@ -1,3 +1,5 @@
 npm install
 npx playwright install
 npm run test
+npx cucumber-js --tags "@Login"
+npx ts-node src/support/auth.setup.ts

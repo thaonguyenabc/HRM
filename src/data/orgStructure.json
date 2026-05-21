@@ -1,0 +1,16 @@
+{
+    "menu": "Org Structure",
+    "pageTitle": "Organization Structure",
+    "searchPlaceholder": "Search people",
+    "people": {
+        "khanh_mai": { "name": "Khanh Mai", "role": "Manager", "title": "Director" },
+        "em_dinh": { "name": "Em Dinh", "role": "Manager", "title": "Engineering Manager & Tech Lead" },
+        "quang_nguyen": { "name": "Quang Nguyen", "role": "Manager", "title": "Developer" },
+        "linh_dao": { "name": "Linh Dao", "role": "Employee", "title": "Developer" },
+        "not_exist": { "name": "XYZ Not Exist", "role": "", "title": "" }
+    },
+    "hierarchy": {
+        "em_dinh": { "manager": "Em Dinh", "employee": "Minh Do" },
+        "son_nguyen": { "manager": "Son Nguyen", "employee": "Test Employee" }
+    }
+}

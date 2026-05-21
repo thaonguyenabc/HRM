@@ -1,33 +1,26 @@
-// import { chromium } from "@playwright/test";
-// import path from "path";
+import { chromium } from "@playwright/test";
+import path from "path";
+import { config } from "./config";
+import { LoginPage } from "../pages/login/loginPage";
 
-// const authFile = path.join(__dirname, "../../.auth/user.json");
+const authFile = path.join(__dirname, "../../.auth/user.json");
 
-// (async () => {
-//     const browser = await chromium.launch({ headless: false });
-//     const context = await browser.newContext();
-//     const page = await context.newPage();
+(async () => {
+    const browser = await chromium.launch({ headless: false });
+    const context = await browser.newContext();
+    const page = await context.newPage();
 
-//     // Vào trang app của bạn
-//     await page.goto(process.env.BASE_URL!);
+    await page.goto(config.baseUrl);
 
-//     // Click "Sign in with MS"
-//     await page.getByRole("button", { name: "Sign in with MS" }).click();
+    const loginPage = new LoginPage(page);
+    await loginPage.clickLoginButton("Sign in with MS");
+    await loginPage.pickMicrosoftAccount(config.credentials.email);
+    await loginPage.enterPassword(config.credentials.password);
+    await loginPage.handleStaySignedIn();
 
-//     // Nhập email Microsoft
-//     await page.fill('input[type="email"]', "thao.nguyen@abcdigital.io");
-//     await page.click('input[type="submit"]'); // Next
+    await page.waitForURL(/abcdigital/);
+    await context.storageState({ path: authFile });
 
-//     // Nhập password
-//     await page.fill('input[type="password"]', "Thao123456789@@");
-//     await page.click('input[type="submit"]');
-
-//     // Chờ đăng nhập xong (vào trang chính)
-//     await page.waitForURL(/abcdigital/);
-
-//     // Lưu session
-//     await context.storageState({ path: authFile });
-
-//     await browser.close();
-//     console.log("Auth state saved to", authFile);
-// })();
+    await browser.close();
+    console.log("Auth state saved to", authFile);
+})();

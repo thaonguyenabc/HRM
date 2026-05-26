@@ -28,25 +28,32 @@ export class CustomWorld extends World {
         this.orgStructurePage = new OrgStructurePage(this.page);
     }
 
-    // Dùng cho feature khác — dùng chung shared context, session luôn sống
+    // Dùng cho feature khác — dùng chung shared context, session được hooks.ts quản lý
     async launchBrowserWithStorageSession() {
-        if (!this.authenticatedContext) {
-            throw new Error("Chưa có session. Chạy: npx ts-node src/support/auth.setup.ts");
+        this.context = this.authenticatedContext;
+        const existing = this.context.pages();
+        const livePage = existing.find(p => !p.isClosed());
+
+        if (livePage) {
+            this.page = livePage;
+        } else {
+            this.page = await this.context.newPage();
         }
 
-        this.context = this.authenticatedContext;
-        this.page = await this.context.newPage();
-        await this.page.goto(this.config.baseUrl, { waitUntil: "domcontentloaded" });
+        // Navigate every scenario — sessionStorage is preserved on same tab (same origin)
+        // With tokens in sessionStorage, MSAL loads app without redirect
+        await this.page.goto(this.config.baseUrl, { waitUntil: "networkidle" });
 
-        // Nếu session hết hạn → tự login lại
-        await this.page.waitForTimeout(2000);
-        if (this.page.url().includes("login")) {
-            const loginPage = new LoginPage(this.page);
-            await loginPage.clickLoginButton("Sign in with MS");
-            await loginPage.pickMicrosoftAccount(this.config.credentials.email);
-            await loginPage.enterPassword(this.config.credentials.password);
-            await loginPage.handleStaySignedIn();
+        const needsLogin = await this.page.getByRole("button", { name: "Sign in with MS" })
+            .isVisible({ timeout: 3000 }).catch(() => false);
+        if (needsLogin) {
+            const tempLogin = new LoginPage(this.page);
+            await tempLogin.clickLoginButton("Sign in with MS");
+            await tempLogin.pickMicrosoftAccount(this.config.credentials.email);
+            await tempLogin.enterPassword(this.config.credentials.password);
+            await tempLogin.handleStaySignedIn();
             await this.page.waitForURL(/abcdigital/);
+            await this.page.waitForLoadState("networkidle");
         }
 
         this.basePage = new BasePage(this.page);

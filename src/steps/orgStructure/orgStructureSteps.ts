@@ -5,6 +5,14 @@ When("User clicks on {string} in the Org Chart", async function (this: CustomWor
     await this.orgStructurePage.clickPerson(name);
 });
 
+When("User hovers over {string} in the Org Chart", async function (this: CustomWorld, name: string) {
+    await this.orgStructurePage.hoverPerson(name);
+});
+
+When("User expands {string} node in the Org Chart", async function (this: CustomWorld, name: string) {
+    await this.orgStructurePage.expandPersonNode(name);
+});
+
 When("User searches for {string} in Org Chart", async function (this: CustomWorld, name: string) {
     await this.orgStructurePage.searchPerson(name);
 });

@@ -22,20 +22,28 @@ export class LoginPage extends BasePage {
 
     async pickMicrosoftAccount(email: string): Promise<void> {
         const account = this.microsoftAccount(email);
-        const isVisible = await account.isVisible().catch(() => false);
-        if (isVisible) {
+        const accountShown = await account.waitFor({ state: "visible", timeout: 8000 })
+            .then(() => true).catch(() => false);
+
+        if (accountShown) {
             await account.click();
             return;
         }
+
+        // Không có account picker → nhập email thủ công
         await this.emailInput.waitFor({ state: "visible", timeout: 15000 });
         await this.emailInput.fill(email);
         await this.submitButton.click();
     }
 
     async enterPassword(password: string): Promise<void> {
-        await this.passwordInput.waitFor({ state: "visible", timeout: 15000 });
-        await this.passwordInput.fill(password);
-        await this.submitButton.click();
+        const shown = await this.passwordInput.waitFor({ state: "visible", timeout: 8000 })
+            .then(() => true).catch(() => false);
+        if (shown) {
+            await this.passwordInput.fill(password);
+            await this.submitButton.click();
+        }
+        // Không hiện → MS đã auto-login (account "Signed in"), bỏ qua
     }
 
     async handleStaySignedIn(): Promise<void> {

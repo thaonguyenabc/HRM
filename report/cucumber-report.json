@@ -4,95 +4,134 @@
     "elements": [
       {
         "description": "",
-        "id": "login-page;login-with-valid-microsoft-account",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Login with valid Microsoft account",
+        "id": "org-structure-page;view-employee-profile-from-org-chart",
+        "keyword": "Scenario Outline",
+        "line": 43,
+        "name": "View employee profile from Org Chart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 368000
+              "duration": 274500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "User goes to landing page",
+            "line": 31,
+            "name": "User goes to dashboard page",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:4"
+              "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1645954598
+              "duration": 2022844499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "User clicks on login button \"Sign in with MS\"",
+            "line": 32,
+            "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:5"
+              "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1687515000
+              "duration": 1098787200
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
-            "name": "User enters Microsoft email",
+            "line": 33,
+            "name": "User clicks on \"Quang Nguyen\" in the Org Chart",
             "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:9"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 1895483500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "User enters Microsoft password",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1382696998
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User handles stay signed in",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1928931299
+              "duration": 1115718000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "User should see the URL contains \"dashboard\"",
+            "line": 34,
+            "name": "User should see page title \"Profile\"",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:98"
+              "location": "src\\steps\\core\\baseSteps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1018253498
+              "duration": 1042535199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "User should see \"Quang Nguyen\" in profile overview",
+            "match": {
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1022993298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "User should see \"quang.nguyen@abcdigital.io\" in profile overview",
+            "match": {
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1022236398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "User should see \"HR Admin\" in profile overview",
+            "match": {
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1024497098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "User goes back",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3034823800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "User should see page title \"Organization Structure\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021672898
             }
           },
           {
@@ -100,205 +139,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 44752700
+              "duration": 315399
             }
           }
         ],
         "tags": [
           {
-            "name": "@Login",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-page;login-with-invalid-password",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Login with invalid password",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 152200
-            }
+            "name": "@OrgStructure",
+            "line": 1
           },
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "User goes to landing page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1761794200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "User clicks on login button \"Sign in with MS\"",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1616445799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "User enters Microsoft email",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1415256199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "User enters Microsoft password \"wrongpassword\"",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1901329198
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "User should see Microsoft error message",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1062176199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 53674999
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login",
-            "line": 12
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-page;login-with-non-existing-microsoft-account",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Login with non-existing Microsoft account",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 257600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "User goes to landing page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1728955700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "User clicks on login button \"Sign in with MS\"",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1554555000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "User enters Microsoft email \"abcxyz123@gamil.com\"",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1400327298
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "User should see Microsoft error message",
-            "match": {
-              "location": "src\\steps\\login\\loginSteps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1022005799
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 49758399
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login",
-            "line": 20
+            "name": "@OrgStructure3",
+            "line": 29
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "login-page",
-    "line": 1,
+    "id": "org-structure-page",
+    "line": 2,
     "keyword": "Feature",
-    "name": "Login Page",
-    "tags": [],
-    "uri": "src\\features\\login\\loginPage.feature"
+    "name": "Org Structure Page",
+    "tags": [
+      {
+        "name": "@OrgStructure",
+        "line": 1
+      }
+    ],
+    "uri": "src\\features\\orgStructure\\orgStructure.feature"
   }
 ]

@@ -106,4 +106,4 @@ Feature: Org Structure Page
 
         Examples:
             | Menu          | Name |
-            | Org Structure | XYZ  |
+            | Org Structure | XYZr |

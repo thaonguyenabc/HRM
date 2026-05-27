@@ -4,134 +4,69 @@
     "elements": [
       {
         "description": "",
-        "id": "org-structure-page;view-employee-profile-from-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 43,
-        "name": "View employee profile from Org Chart",
+        "id": "org-structure-page;search-for-a-non-existing-person-in-org-chart",
+        "keyword": "Scenario",
+        "line": 99,
+        "name": "Search for a non-existing person in Org Chart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 274500
+              "duration": 327900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 31,
+            "line": 100,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 2022844499
+              "duration": 2027988500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 32,
+            "line": 101,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1098787200
+              "duration": 1101537000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
-            "name": "User clicks on \"Quang Nguyen\" in the Org Chart",
+            "line": 102,
+            "name": "User searches for \"XYZ\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1115718000
+              "duration": 1060348500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
-            "name": "User should see page title \"Profile\"",
+            "line": 103,
+            "name": "Org Chart should show no results",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 1042535199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "User should see \"Quang Nguyen\" in profile overview",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1022993298
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "User should see \"quang.nguyen@abcdigital.io\" in profile overview",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1022236398
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "User should see \"HR Admin\" in profile overview",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1024497098
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 38,
-            "name": "User goes back",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3034823800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "User should see page title \"Organization Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1021672898
+              "duration": 1022188098
             }
           },
           {
@@ -139,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 315399
+              "duration": 308600
             }
           }
         ],
@@ -149,8 +84,8 @@
             "line": 1
           },
           {
-            "name": "@OrgStructure3",
-            "line": 29
+            "name": "@OrgStructure8",
+            "line": 98
           }
         ],
         "type": "scenario"

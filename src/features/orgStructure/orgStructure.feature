@@ -2,29 +2,25 @@
 Feature: Org Structure Page
 
     @OrgStructure1
-    Scenario Outline: Navigate to Org Structure page successfully
+    Scenario: Navigate to Org Structure page successfully
         Given User goes to dashboard page
-        When User clicks on sidebar menu "<Menu>"
-        Then User should see page title "<Title>"
-        And User verifies the "<Subtitle>" text is "visible"
-        And User verifies the "<Tab>" text is "visible"
-        And User verifies the "<SearchField>" field is "visible"
-
-        Examples:
-            | Menu          | Title                  | Subtitle                                              | Tab       | SearchField   |
-            | Org Structure | Organization Structure | Hierarchy based on primary line manager relationships | Org Chart | Search people |
+        When User clicks on sidebar menu "Org Structure"
+        Then User should see page title "Organization Structure"
+        And User verifies the "Hierarchy based on primary line manager relationships" text is "visible"
+        And User verifies the "Org Chart" text is "visible"
+        And User verifies the "Search people" field is "visible"
 
     @OrgStructure2
     Scenario Outline: Search for an existing person in Org Chart
         Given User goes to dashboard page
-        When User clicks on sidebar menu "<Menu>"
+        When User clicks on sidebar menu "Org Structure"
         And User searches for "<Name>" in Org Chart
         Then User should see "<Name>" in the Org Chart
 
         Examples:
-            | Menu          | Name         |
-            | Org Structure | Khanh Mai    |
-            | Org Structure | Quang Nguyen |
+            | Name         |
+            | Khanh Mai    |
+            | Quang Nguyen |
 
     @OrgStructure3
     Scenario Outline: View employee profile from Org Chart
@@ -42,7 +38,7 @@ Feature: Org Structure Page
             | Name         | Email                      | Role     |
             | Quang Nguyen | quang.nguyen@abcdigital.io | HR Admin |
 
-    @OrgStructure3a
+    @OrgStructure4
     Scenario Outline: View employee profile for person under collapsed node
         Given User goes to dashboard page
         When User clicks on sidebar menu "Org Structure"
@@ -52,12 +48,14 @@ Feature: Org Structure Page
         And User should see "<Name>" in profile overview
         And User should see "<Email>" in profile overview
         And User should see "<Role>" in profile overview
+        When User goes back
+        Then User should see page title "Organization Structure"
 
         Examples:
             | Parent       | Name     | Email                  | Role     |
-            | Quang Nguyen | Linh Dao | linh.dao@abcdigital.io | HR Admin |
+            | Quang Nguyen | Linh Dao | linh.dao@abcdigital.io | Employee |
 
-    @OrgStructure4
+    @OrgStructure5
     Scenario Outline: Verify manager-employee hierarchy in Org Chart
         Given User goes to dashboard page
         When User clicks on sidebar menu "Org Structure"
@@ -65,11 +63,11 @@ Feature: Org Structure Page
         Then User should see "<Employee>" listed under "<Manager>" in Org Chart
 
         Examples:
-            | Manager      | Employee |
-            | Quang Nguyen | Linh Dao |
-            | Em Dinh      | Minh Do  |
+            | Manager      | Employee    |
+            | Quang Nguyen | Linh Dao    |
+            | Em Dinh      | Diem Nguyen |
 
-    @OrgStructure5
+    @OrgStructure6
     Scenario Outline: Verify role badge displays correctly in Org Chart
         Given User goes to dashboard page
         When User clicks on sidebar menu "Org Structure"
@@ -77,7 +75,7 @@ Feature: Org Structure Page
 
         Examples:
             | Name         | Role     |
-            | Khanh Mai    | HR Admin |
+            | Khanh Mai    | Employee |
             | Quang Nguyen | HR Admin |
 
     @OrgStructure7
@@ -97,13 +95,9 @@ Feature: Org Structure Page
             | Name      | Department | Team           | Email                   |
             | Khanh Mai | Management | Executive Team | khanh.mai@abcdigital.io |
 
-    @OrgStructure6
-    Scenario Outline: Search for a non-existing person in Org Chart
+    @OrgStructure8
+    Scenario: Search for a non-existing person in Org Chart
         Given User goes to dashboard page
-        When User clicks on sidebar menu "<Menu>"
-        And User searches for "<Name>" in Org Chart
+        When User clicks on sidebar menu "Org Structure"
+        And User searches for "XYZ" in Org Chart
         Then Org Chart should show no results
-
-        Examples:
-            | Menu          | Name |
-            | Org Structure | XYZr |

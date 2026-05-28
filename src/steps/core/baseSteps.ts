@@ -75,7 +75,7 @@ Then("User verifies the {string} field is {string}", async function (this: Custo
     await this.basePage.verifyTextFieldStatus(label, status);
 });
 
-Then("User verify the {string} button is {string}", async function (this: CustomWorld, buttonText: string, state: string) {
+Then("User verifies the {string} button is {string}", async function (this: CustomWorld, buttonText: string, state: string) {
     await this.basePage.verifyButtonStatus(buttonText, state);
 });
 
@@ -83,15 +83,15 @@ Then("User verifies the {string} text is {string}", async function (this: Custom
     await this.basePage.verifyText(text, state);
 });
 
-Then("User verify the {string} text exactly is {string}", async function (this: CustomWorld, text: string, state: string) {
+Then("User verifies the {string} text exactly is {string}", async function (this: CustomWorld, text: string, state: string) {
     await this.basePage.verifyTextExact(text, state);
 });
 
-Then("User verify the {string} header is {string}", async function (this: CustomWorld, header: string, state: string) {
+Then("User verifies the {string} header is {string}", async function (this: CustomWorld, header: string, state: string) {
     await this.basePage.verifyHeaderState(header, state);
 });
 
-Then("User verify the {string} toggle is {string}", async function (this: CustomWorld, label: string, status: string) {
+Then("User verifies the {string} toggle is {string}", async function (this: CustomWorld, label: string, status: string) {
     await this.basePage.verifyToggleStatus(label, status);
 });
 
@@ -108,4 +108,16 @@ Then("The page should contain the following fields:", async function (this: Cust
     for (const field of fields) {
         await this.basePage.verifyText(field, "visible");
     }
+});
+
+Then("User verifies the {string} column header is {string}", async function (this: CustomWorld, name: string, state: string) {
+    await this.basePage.verifyColumnHeader(name, state);
+});
+
+When("User closes the modal", async function (this: CustomWorld) {
+    await this.basePage.closeModal();
+});
+
+Then("User verifies the modal is {string}", async function (this: CustomWorld, state: string) {
+    await this.basePage.verifyModalState(state);
 });

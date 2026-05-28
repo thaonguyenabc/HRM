@@ -4,6 +4,7 @@ import { config } from "../support/config";
 import { BasePage } from "../pages/core/basePage";
 import { OrgStructurePage } from "../pages/orgStructure/orgStructurePage";
 import { LoginPage } from "../pages/login/loginPage";
+import { WeeklyReportPage } from "../pages/weeklyReports/weeklyReportPage";
 export class CustomWorld extends World {
     browser!: Browser;
     context!: BrowserContext;
@@ -12,6 +13,7 @@ export class CustomWorld extends World {
     basePage!: BasePage;
     loginPage!: LoginPage;
     orgStructurePage!: OrgStructurePage;
+    weeklyReportPage!: WeeklyReportPage;
     config = config;
 
     constructor(options: IWorldOptions) {
@@ -26,6 +28,7 @@ export class CustomWorld extends World {
         this.basePage = new BasePage(this.page);
         this.loginPage = new LoginPage(this.page);
         this.orgStructurePage = new OrgStructurePage(this.page);
+        this.weeklyReportPage = new WeeklyReportPage(this.page);
     }
 
     // Dùng cho feature khác — dùng chung shared context, session được hooks.ts quản lý
@@ -59,6 +62,7 @@ export class CustomWorld extends World {
         this.basePage = new BasePage(this.page);
         this.loginPage = new LoginPage(this.page);
         this.orgStructurePage = new OrgStructurePage(this.page);
+        this.weeklyReportPage = new WeeklyReportPage(this.page);
     }
 }
 

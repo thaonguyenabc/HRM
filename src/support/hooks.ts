@@ -27,8 +27,10 @@ BeforeAll(async function () {
     await page.goto(config.baseUrl, { waitUntil: "networkidle" });
 
     // Kiểm tra xem app có đang ở login page không
-    const needsLogin = await page.getByRole("button", { name: "Sign in with MS" })
-        .isVisible({ timeout: 5000 }).catch(() => false);
+    const needsLogin = await page
+        .getByRole("button", { name: "Sign in with MS" })
+        .isVisible({ timeout: 5000 })
+        .catch(() => false);
 
     if (needsLogin) {
         const loginPage = new LoginPage(page);
@@ -55,7 +57,7 @@ Before(async function (this: CustomWorld) {
 
 AfterStep(async function (this: CustomWorld) {
     if (this.page && !this.page.isClosed()) {
-        await this.page.waitForTimeout(1000).catch(() => {});
+        await this.page.waitForTimeout(700).catch(() => {});
     }
 });
 

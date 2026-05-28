@@ -280,4 +280,41 @@ export class BasePage {
         await locator.waitFor({ state: "visible", timeout: 15000 });
     }
     //#endregion
+
+    //#region Table
+    async verifyColumnHeader(name: string, state: string): Promise<void> {
+        const locator = this.page
+            .getByRole("columnheader", { name })
+            .first()
+            .or(this.page.locator("th").filter({ hasText: name }).first());
+        await this.verifyElementStatus(locator, state);
+    }
+    //#endregion
+
+    get modal() {
+        return this.page.locator('[data-testid="hrm-modal-backdrop"]').first();
+    }
+
+    async closeModal(): Promise<void> {
+        const closeBtn = this.modal.locator('[aria-label*="lose" i]').first();
+        const count = await closeBtn.count();
+        if (count > 0) {
+            await closeBtn.click();
+        } else {
+            await this.page.keyboard.press("Escape");
+        }
+        await this.page.waitForTimeout(700);
+    }
+
+    async verifyModalState(state: string): Promise<void> {
+        if (state === "open") {
+            await this.modal.waitFor({ state: "visible", timeout: 10000 });
+            await expect(this.modal).toBeVisible();
+        } else if (state === "closed") {
+            await expect(this.modal).toBeHidden({ timeout: 10000 });
+        } else {
+            throw new Error(`Invalid modal state: ${state}. Use "open" or "closed".`);
+        }
+    }
+    //#endregion
 }

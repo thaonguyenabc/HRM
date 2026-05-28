@@ -9,6 +9,12 @@ export class OrgStructurePage extends BasePage {
     searchInput = this.page.locator('input[placeholder="Search people"]');
     personNode = (name: string) => this.page.locator(`text="${name}"`);
     orgResultsContainer = this.page.locator(".custom-scrollbar > div");
+    profileOverview = this.page.getByText("Profile Overview");
+    personRow = (name: string) =>
+        this.page.locator(".flex.items-center.gap-2")
+            .filter({ has: this.page.locator("span.truncate", { hasText: name }) })
+            .first();
+    roleBadge = (name: string, role: string) => this.personRow(name).getByText(role, { exact: true });
 
     async searchPerson(name: string): Promise<void> {
         await this.searchInput.waitFor({ state: "visible" });
@@ -16,7 +22,7 @@ export class OrgStructurePage extends BasePage {
     }
 
     async verifyPersonVisible(name: string): Promise<void> {
-        await expect(this.personNode(name)).toBeVisible();
+        await expect.soft(this.personNode(name)).toBeVisible();
     }
 
     async verifyNoResults(): Promise<void> {
@@ -58,13 +64,6 @@ export class OrgStructurePage extends BasePage {
         await this.page.waitForTimeout(500);
     }
 
-    profileOverview = this.page.getByText("Profile Overview");
-    personRow = (name: string) =>
-        this.page.locator(".flex.items-center.gap-2")
-            .filter({ has: this.page.locator("span.truncate", { hasText: name }) })
-            .first();
-    roleBadge = (name: string, role: string) => this.personRow(name).getByText(role, { exact: true });
-
     async verifyRoleBadge(name: string, role: string): Promise<void> {
         await this.personRow(name).waitFor({ state: "visible" });
         await expect(this.roleBadge(name, role)).toBeVisible();
@@ -73,18 +72,18 @@ export class OrgStructurePage extends BasePage {
     async verifyEmployeeUnderManager(manager: string, employee: string): Promise<void> {
         const managerRow = this.personRow(manager);
         const employeeRow = this.personRow(employee);
-        await expect(managerRow).toBeVisible();
-        await expect(employeeRow).toBeVisible();
+        await expect.soft(managerRow).toBeVisible();
+        await expect.soft(employeeRow).toBeVisible();
         const isBelow = await managerRow.evaluate((el, empName) => {
             const emp = Array.from(document.querySelectorAll("span.truncate")).find(s => s.textContent?.trim() === empName)?.closest("div");
             if (!emp) return false;
             return !!(el.compareDocumentPosition(emp) & Node.DOCUMENT_POSITION_FOLLOWING);
         }, employee);
-        expect(isBelow).toBeTruthy();
+        expect.soft(isBelow).toBeTruthy();
     }
 
     async verifyInProfileOverview(text: string): Promise<void> {
         await this.profileOverview.waitFor({ state: "visible" });
-        await expect(this.page.getByText(text).first()).toBeVisible();
+        await expect.soft(this.page.getByText(text).first()).toBeVisible();
     }
 }

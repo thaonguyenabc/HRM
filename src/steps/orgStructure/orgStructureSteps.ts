@@ -13,10 +13,6 @@ When("User expands {string} node in the Org Chart", async function (this: Custom
     await this.orgStructurePage.expandPersonNode(name);
 });
 
-Then("User should see {string} in profile overview", async function (this: CustomWorld, text: string) {
-    await this.orgStructurePage.verifyInProfileOverview(text);
-});
-
 Then("User should see role badge {string} next to {string} in Org Chart", async function (this: CustomWorld, role: string, name: string) {
     await this.orgStructurePage.verifyRoleBadge(name, role);
 });

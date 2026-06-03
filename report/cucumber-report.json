@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 249600
+              "duration": 247899
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18432717498
+              "duration": 18953092198
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 748359799
+              "duration": 786650700
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 714701199
+              "duration": 739994398
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 714920000
+              "duration": 726064899
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 714804799
+              "duration": 710249198
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 715799799
+              "duration": 732300199
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 156500
+              "duration": 120700
             }
           }
         ],
@@ -128,7 +128,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 65200
+              "duration": 69400
             }
           },
           {
@@ -141,7 +141,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1975591899
+              "duration": 2080050300
             }
           },
           {
@@ -154,7 +154,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 739882199
+              "duration": 2083788999
             }
           },
           {
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1749970199
+              "duration": 1788390298
             }
           },
           {
@@ -180,7 +180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 710797399
+              "duration": 709735098
             }
           },
           {
@@ -188,7 +188,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70700
+              "duration": 112599
             }
           }
         ],
@@ -216,7 +216,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 46900
+              "duration": 122600
             }
           },
           {
@@ -229,7 +229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2092677100
+              "duration": 15798208399
             }
           },
           {
@@ -242,7 +242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 773869199
+              "duration": 2031876898
             }
           },
           {
@@ -255,7 +255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1757865599
+              "duration": 1773514999
             }
           },
           {
@@ -268,7 +268,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 712139399
+              "duration": 709593499
             }
           },
           {
@@ -276,7 +276,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64700
+              "duration": 266400
             }
           }
         ],
@@ -296,7 +296,7 @@
         "description": "",
         "id": "org-structure-page;view-employee-profile-from-org-chart",
         "keyword": "Scenario Outline",
-        "line": 39,
+        "line": 40,
         "name": "View employee profile from Org Chart",
         "steps": [
           {
@@ -304,7 +304,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 93399
+              "duration": 93899
             }
           },
           {
@@ -317,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15772887900
+              "duration": 2093480599
             }
           },
           {
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 745903699
+              "duration": 2485191299
             }
           },
           {
@@ -343,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 743566700
+              "duration": 2002302099
             }
           },
           {
@@ -356,66 +356,79 @@
             },
             "result": {
               "status": "passed",
-              "duration": 715364798
+              "duration": 723580100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
-            "name": "User should see \"Quang Nguyen\" in profile overview",
+            "name": "User verifies the \"Profile Overview\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 713129799
+              "duration": 719634900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 32,
-            "name": "User should see \"quang.nguyen@abcdigital.io\" in profile overview",
+            "name": "User verifies the \"Quang Nguyen\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 714293399
+              "duration": 716879299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 33,
-            "name": "User should see \"HR Admin\" in profile overview",
+            "name": "User verifies the \"quang.nguyen@abcdigital.io\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 713445700
+              "duration": 716387798
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "User verifies the \"HR Admin\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30713036899,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('HR Admin').first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('HR Admin').first()\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at BasePage.verifyText (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:199:35)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:83:25)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 34,
+            "line": 35,
             "name": "User goes back",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:44"
             },
             "result": {
-              "status": "failed",
-              "duration": 1144426300,
-              "error_message": "page.waitForTimeout: Target page, context or browser has been closed\n    at BasePage.pageAlready (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:36:25)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:46:5)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 36,
             "name": "User should see page title \"Organization Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:16"
@@ -430,7 +443,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73100
+              "duration": 160099
             }
           }
         ],
@@ -450,7 +463,7 @@
         "description": "",
         "id": "org-structure-page;view-employee-profile-for-person-under-collapsed-node",
         "keyword": "Scenario Outline",
-        "line": 56,
+        "line": 58,
         "name": "View employee profile for person under collapsed node",
         "steps": [
           {
@@ -458,82 +471,69 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63099
+              "duration": 66600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 43,
+            "line": 44,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 2224043398
+              "duration": 15828312998
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 44,
+            "line": 45,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 963498,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "User expands \"Quang Nguyen\" node in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2018815299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 46,
-            "name": "User clicks on \"Linh Dao\" in the Org Chart",
+            "name": "User expands \"Quang Nguyen\" node in the Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 47,
-            "name": "User should see page title \"Profile\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2744103499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
-            "name": "User should see \"Linh Dao\" in profile overview",
+            "line": 47,
+            "name": "User clicks on \"Linh Dao\" in the Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10721357600,
+              "error_message": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Linh Dao', { exact: true }) to be visible\u001b[22m\n\n    at OrgStructurePage.clickPerson (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:23:23)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:5:33)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "User should see page title \"Profile\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:16"
             },
             "result": {
               "status": "skipped",
@@ -544,9 +544,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 49,
-            "name": "User should see \"linh.dao@abcdigital.io\" in profile overview",
+            "name": "User verifies the \"Profile Overview\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "skipped",
@@ -557,9 +557,35 @@
             "arguments": [],
             "keyword": "And ",
             "line": 50,
-            "name": "User should see \"Employee\" in profile overview",
+            "name": "User verifies the \"Linh Dao\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "User verifies the \"linh.dao@abcdigital.io\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "User verifies the \"Employee\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "skipped",
@@ -569,7 +595,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 51,
+            "line": 53,
             "name": "User goes back",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:44"
@@ -582,7 +608,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 54,
             "name": "User should see page title \"Organization Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:16"
@@ -597,7 +623,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119100
+              "duration": 59199
             }
           }
         ],
@@ -608,7 +634,7 @@
           },
           {
             "name": "@OrgStructure4",
-            "line": 41
+            "line": 42
           }
         ],
         "type": "scenario"
@@ -617,7 +643,7 @@
         "description": "",
         "id": "org-structure-page;verify-manager-employee-hierarchy-in-org-chart",
         "keyword": "Scenario Outline",
-        "line": 67,
+        "line": 69,
         "name": "Verify manager-employee hierarchy in Org Chart",
         "steps": [
           {
@@ -625,60 +651,60 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 88100
+              "duration": 51299
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 60,
+            "line": 62,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 699324899
+              "duration": 15791341998
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 61,
+            "line": 63,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 1141598,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
+              "status": "passed",
+              "duration": 2009475899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 62,
+            "line": 64,
             "name": "User expands \"Quang Nguyen\" node in the Org Chart",
             "match": {
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2746017899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 63,
+            "line": 65,
             "name": "User should see \"Linh Dao\" listed under \"Quang Nguyen\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5728403099,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Linh Dao' }) }).first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Linh Dao' }) }).first()\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyEmployeeUnderManager (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:65:40)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:21:5)"
             }
           },
           {
@@ -686,7 +712,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 69799
+              "duration": 229499
             }
           }
         ],
@@ -697,7 +723,7 @@
           },
           {
             "name": "@OrgStructure5",
-            "line": 58
+            "line": 60
           }
         ],
         "type": "scenario"
@@ -706,7 +732,7 @@
         "description": "",
         "id": "org-structure-page;verify-manager-employee-hierarchy-in-org-chart",
         "keyword": "Scenario Outline",
-        "line": 68,
+        "line": 70,
         "name": "Verify manager-employee hierarchy in Org Chart",
         "steps": [
           {
@@ -714,60 +740,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64800
+              "duration": 107700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 60,
+            "line": 62,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 564491599
+              "duration": 2584365000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 61,
+            "line": 63,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 963799,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
+              "status": "passed",
+              "duration": 2159614599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 62,
+            "line": 64,
             "name": "User expands \"Em Dinh\" node in the Org Chart",
             "match": {
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2742285000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 63,
+            "line": 65,
             "name": "User should see \"Diem Nguyen\" listed under \"Em Dinh\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 750925499
             }
           },
           {
@@ -775,7 +800,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73100
+              "duration": 148300
             }
           }
         ],
@@ -786,7 +811,7 @@
           },
           {
             "name": "@OrgStructure5",
-            "line": 58
+            "line": 60
           }
         ],
         "type": "scenario"
@@ -795,7 +820,7 @@
         "description": "",
         "id": "org-structure-page;verify-role-badge-displays-correctly-in-org-chart",
         "keyword": "Scenario Outline",
-        "line": 78,
+        "line": 80,
         "name": "Verify role badge displays correctly in Org Chart",
         "steps": [
           {
@@ -803,47 +828,47 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 129000
+              "duration": 116700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 72,
+            "line": 74,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 600500299
+              "duration": 2060268999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 73,
+            "line": 75,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 781800,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
+              "status": "passed",
+              "duration": 2483680899
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 74,
+            "line": 76,
             "name": "User should see role badge \"Employee\" next to \"Khanh Mai\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5723194699,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Khanh Mai' }) }).first().getByText('Employee', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Khanh Mai' }) }).first().getByText('Employee', { exact: true })\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyRoleBadge (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:58:50)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:17:5)"
             }
           },
           {
@@ -851,7 +876,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 52799
+              "duration": 68800
             }
           }
         ],
@@ -862,7 +887,7 @@
           },
           {
             "name": "@OrgStructure6",
-            "line": 70
+            "line": 72
           }
         ],
         "type": "scenario"
@@ -871,7 +896,7 @@
         "description": "",
         "id": "org-structure-page;verify-role-badge-displays-correctly-in-org-chart",
         "keyword": "Scenario Outline",
-        "line": 79,
+        "line": 81,
         "name": "Verify role badge displays correctly in Org Chart",
         "steps": [
           {
@@ -879,47 +904,47 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 81100
+              "duration": 50000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 72,
+            "line": 74,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 562640599
+              "duration": 15848089899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 73,
+            "line": 75,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 848300,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
+              "status": "passed",
+              "duration": 2000004999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 74,
+            "line": 76,
             "name": "User should see role badge \"HR Admin\" next to \"Quang Nguyen\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5752157300,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Quang Nguyen' }) }).first().getByText('HR Admin', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Quang Nguyen' }) }).first().getByText('HR Admin', { exact: true })\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyRoleBadge (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:58:50)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:17:5)"
             }
           },
           {
@@ -927,7 +952,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55099
+              "duration": 103700
             }
           }
         ],
@@ -938,7 +963,7 @@
           },
           {
             "name": "@OrgStructure6",
-            "line": 70
+            "line": 72
           }
         ],
         "type": "scenario"
@@ -947,7 +972,7 @@
         "description": "",
         "id": "org-structure-page;view-hover-card-details-and-navigate-to-profile",
         "keyword": "Scenario Outline",
-        "line": 96,
+        "line": 98,
         "name": "View hover card details and navigate to profile",
         "steps": [
           {
@@ -955,138 +980,137 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 114999
+              "duration": 50300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 83,
+            "line": 85,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 592791699
+              "duration": 2384208299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 84,
+            "line": 86,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 2451598,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 85,
-            "name": "User hovers over \"Khanh Mai\" in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:8"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 86,
-            "name": "User verifies the \"Management\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 726166299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 87,
-            "name": "User verifies the \"Executive Team\" text is \"visible\"",
+            "name": "User hovers over \"Khanh Mai\" in the Org Chart",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:8"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 88,
-            "name": "User verifies the \"khanh.mai@abcdigital.io\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 89,
-            "name": "User clicks on the \"View Profile\" button",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:28"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 751372799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 90,
-            "name": "User should see page title \"Profile\"",
+            "line": 88,
+            "name": "User verifies the \"Management\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 713971199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "User verifies the \"Executive Team\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 716591600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 90,
+            "name": "User verifies the \"khanh.mai@abcdigital.io\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715014998
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 91,
-            "name": "User goes back",
+            "name": "User clicks on the \"View Profile\" button",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:44"
+              "location": "src\\steps\\core\\baseSteps.ts:28"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4960137598
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 92,
+            "name": "User should see page title \"Profile\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708004198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 93,
+            "name": "User goes back",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2735712598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 94,
             "name": "User should see page title \"Organization Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:16"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 710919798
             }
           },
           {
@@ -1094,7 +1118,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 165099
+              "duration": 90999
             }
           }
         ],
@@ -1105,7 +1129,7 @@
           },
           {
             "name": "@OrgStructure7",
-            "line": 81
+            "line": 83
           }
         ],
         "type": "scenario"
@@ -1114,7 +1138,7 @@
         "description": "",
         "id": "org-structure-page;search-for-a-non-existing-person-in-org-chart",
         "keyword": "Scenario",
-        "line": 99,
+        "line": 101,
         "name": "Search for a non-existing person in Org Chart",
         "steps": [
           {
@@ -1122,60 +1146,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 199500
+              "duration": 67699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 100,
+            "line": 102,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 591699098
+              "duration": 2541320800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 101,
+            "line": 103,
             "name": "User clicks on sidebar menu \"Org Structure\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 777000,
-              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
+              "status": "passed",
+              "duration": 747438600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 102,
+            "line": 104,
             "name": "User enters \"XYZ\" into the \"Search people\" field",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1754804298
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 103,
+            "line": 105,
             "name": "Org Chart should show no results",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:28"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 718696600
             }
           },
           {
@@ -1183,7 +1206,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67800
+              "duration": 113699
             }
           }
         ],
@@ -1194,7 +1217,7 @@
           },
           {
             "name": "@OrgStructure8",
-            "line": 98
+            "line": 100
           }
         ],
         "type": "scenario"

@@ -71,8 +71,4 @@ export class OrgStructurePage extends BasePage {
         expect.soft(isBelow).toBeTruthy();
     }
 
-    async verifyInProfileOverview(text: string): Promise<void> {
-        await this.loc.containsText("Profile Overview").waitFor({ state: "visible" });
-        await expect.soft(this.loc.containsText(text).first()).toBeVisible();
-    }
 }

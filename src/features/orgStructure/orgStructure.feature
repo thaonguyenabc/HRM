@@ -28,9 +28,10 @@ Feature: Org Structure Page
         When User clicks on sidebar menu "Org Structure"
         And User clicks on "<Name>" in the Org Chart
         Then User should see page title "Profile"
-        And User should see "<Name>" in profile overview
-        And User should see "<Email>" in profile overview
-        And User should see "<Role>" in profile overview
+        And User verifies the "Profile Overview" text is "visible"
+        And User verifies the "<Name>" text is "visible"
+        And User verifies the "<Email>" text is "visible"
+        And User verifies the "<Role>" text is "visible"
         When User goes back
         Then User should see page title "Organization Structure"
 
@@ -45,9 +46,10 @@ Feature: Org Structure Page
         And User expands "<Parent>" node in the Org Chart
         And User clicks on "<Name>" in the Org Chart
         Then User should see page title "Profile"
-        And User should see "<Name>" in profile overview
-        And User should see "<Email>" in profile overview
-        And User should see "<Role>" in profile overview
+        And User verifies the "Profile Overview" text is "visible"
+        And User verifies the "<Name>" text is "visible"
+        And User verifies the "<Email>" text is "visible"
+        And User verifies the "<Role>" text is "visible"
         When User goes back
         Then User should see page title "Organization Structure"
 

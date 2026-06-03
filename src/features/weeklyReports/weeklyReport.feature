@@ -75,4 +75,4 @@ Feature: Weekly Reports Page
 
     @WeeklyReports7
     Scenario: Toggle Plans Only filter and verify list changes
-        When User verifies Plans Only filter changes the list
+        Then User verifies Plans Only filter changes the list

@@ -6,7 +6,6 @@ export class LoginPage extends BasePage {
         super(page);
     }
 
-    loginButton = (name: string) => this.page.getByRole("button", { name });
     microsoftAccount = (email: string) => this.page.locator(`[data-test-id="${email}"]`);
     emailInput = this.page.locator('input[type="email"]');
     passwordInput = this.page.locator('input[type="password"]');
@@ -15,9 +14,8 @@ export class LoginPage extends BasePage {
     errorMessage = this.page.locator("#usernameError, #passwordError");
 
     async clickLoginButton(name: string): Promise<void> {
-        const button = this.loginButton(name);
-        await button.waitFor({ state: "visible", timeout: 10000 });
-        await button.click();
+        await this.loc.button(name).waitFor({ state: "visible", timeout: 10000 });
+        await this.loc.button(name).click();
     }
 
     async pickMicrosoftAccount(email: string): Promise<void> {

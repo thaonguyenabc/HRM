@@ -31,6 +31,6 @@ Then("User verifies all visible rows have status {string}", async function (this
     await this.weeklyReportPage.verifyAllVisibleRowsHaveStatus(status);
 });
 
-When("User verifies Plans Only filter changes the list", async function (this: CustomWorld) {
+Then("User verifies Plans Only filter changes the list", async function (this: CustomWorld) {
     await this.weeklyReportPage.verifyPlansOnlyFilterChangesTheList();
 });

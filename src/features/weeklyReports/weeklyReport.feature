@@ -50,7 +50,7 @@ Feature: Weekly Reports Page
         Then User verifies the modal is "open"
         When User selects a week for the new report
         And User fills in the weekly report content "AUTOMATION TEST: Weekly report submit"
-        And User submits the weekly report
+        And User clicks on the "Submit" button
         Then User verifies the modal is "closed"
         And User verifies the selected week appears in the list
         And User verifies today's date is shown as submit date

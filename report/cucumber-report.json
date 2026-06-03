@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 517599
+              "duration": 249600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1787596299
+              "duration": 18432717498
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 790027099
+              "duration": 748359799
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 726886799
+              "duration": 714701199
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 716637600
+              "duration": 714920000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 719861699
+              "duration": 714804799
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 726816100
+              "duration": 715799799
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 369800
+              "duration": 156500
             }
           }
         ],
@@ -128,7 +128,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 167799
+              "duration": 65200
             }
           },
           {
@@ -141,7 +141,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1969706098
+              "duration": 1975591899
             }
           },
           {
@@ -154,33 +154,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 746469200
+              "duration": 739882199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "User searches for \"Khanh Mai\" in Org Chart",
+            "name": "User enters \"Khanh Mai\" into the \"Search people\" field",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 746317300
+              "duration": 1749970199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "User should see \"Khanh Mai\" in the Org Chart",
+            "name": "User verifies the \"Khanh Mai\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 712349398
+              "duration": 710797399
             }
           },
           {
@@ -188,7 +188,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 128699
+              "duration": 70700
             }
           }
         ],
@@ -216,7 +216,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 133599
+              "duration": 46900
             }
           },
           {
@@ -229,7 +229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1693811299
+              "duration": 2092677100
             }
           },
           {
@@ -242,33 +242,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 780683999
+              "duration": 773869199
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "User searches for \"Quang Nguyen\" in Org Chart",
+            "name": "User enters \"Quang Nguyen\" into the \"Search people\" field",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 740980498
+              "duration": 1757865599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 18,
-            "name": "User should see \"Quang Nguyen\" in the Org Chart",
+            "name": "User verifies the \"Quang Nguyen\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 718321999
+              "duration": 712139399
             }
           },
           {
@@ -276,7 +276,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 228799
+              "duration": 64700
             }
           }
         ],
@@ -304,7 +304,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 323700
+              "duration": 93399
             }
           },
           {
@@ -317,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1802749400
+              "duration": 15772887900
             }
           },
           {
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 730920799
+              "duration": 745903699
             }
           },
           {
@@ -343,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 731659399
+              "duration": 743566700
             }
           },
           {
@@ -356,7 +356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 718208700
+              "duration": 715364798
             }
           },
           {
@@ -365,11 +365,11 @@
             "line": 31,
             "name": "User should see \"Quang Nguyen\" in profile overview",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 714183599
+              "duration": 713129799
             }
           },
           {
@@ -378,11 +378,11 @@
             "line": 32,
             "name": "User should see \"quang.nguyen@abcdigital.io\" in profile overview",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 718008198
+              "duration": 714293399
             }
           },
           {
@@ -391,11 +391,11 @@
             "line": 33,
             "name": "User should see \"HR Admin\" in profile overview",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 709227699
+              "duration": 713445700
             }
           },
           {
@@ -407,8 +407,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:44"
             },
             "result": {
-              "status": "passed",
-              "duration": 2736372699
+              "status": "failed",
+              "duration": 1144426300,
+              "error_message": "page.waitForTimeout: Target page, context or browser has been closed\n    at BasePage.pageAlready (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:36:25)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:46:5)"
             }
           },
           {
@@ -420,8 +421,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 727474399
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -429,7 +430,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 290199
+              "duration": 73100
             }
           }
         ],
@@ -457,7 +458,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 205300
+              "duration": 63099
             }
           },
           {
@@ -470,7 +471,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2096534199
+              "duration": 2224043398
             }
           },
           {
@@ -482,8 +483,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 808001599
+              "status": "failed",
+              "duration": 963498,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
@@ -495,8 +497,8 @@
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 1262713900
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -508,9 +510,8 @@
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
             },
             "result": {
-              "status": "failed",
-              "duration": 10724109698,
-              "error_message": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=\"Linh Dao\"') to be visible\u001b[22m\n\n    at OrgStructurePage.clickPerson (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:34:37)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:5:33)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -532,7 +533,7 @@
             "line": 48,
             "name": "User should see \"Linh Dao\" in profile overview",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "skipped",
@@ -545,7 +546,7 @@
             "line": 49,
             "name": "User should see \"linh.dao@abcdigital.io\" in profile overview",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "skipped",
@@ -558,7 +559,7 @@
             "line": 50,
             "name": "User should see \"Employee\" in profile overview",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
             },
             "result": {
               "status": "skipped",
@@ -596,7 +597,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 165500
+              "duration": 119100
             }
           }
         ],
@@ -624,7 +625,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 141499
+              "duration": 88100
             }
           },
           {
@@ -637,7 +638,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2017714799
+              "duration": 699324899
             }
           },
           {
@@ -649,8 +650,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 820586399
+              "status": "failed",
+              "duration": 1141598,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
@@ -662,8 +664,8 @@
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 1245079898
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -672,12 +674,11 @@
             "line": 63,
             "name": "User should see \"Linh Dao\" listed under \"Quang Nguyen\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:32"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
             },
             "result": {
-              "status": "failed",
-              "duration": 5725159898,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Linh Dao' }) }).first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Linh Dao' }) }).first()\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyEmployeeUnderManager (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:76:40)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:33:5)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -685,7 +686,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 241399
+              "duration": 69799
             }
           }
         ],
@@ -713,7 +714,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 160799
+              "duration": 64800
             }
           },
           {
@@ -726,7 +727,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1934735899
+              "duration": 564491599
             }
           },
           {
@@ -738,8 +739,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 750017100
+              "status": "failed",
+              "duration": 963799,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
@@ -751,8 +753,8 @@
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 1234686398
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -761,11 +763,11 @@
             "line": 63,
             "name": "User should see \"Diem Nguyen\" listed under \"Em Dinh\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:32"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
             },
             "result": {
-              "status": "passed",
-              "duration": 732681399
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -773,7 +775,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 108799
+              "duration": 73100
             }
           }
         ],
@@ -801,7 +803,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 71600
+              "duration": 129000
             }
           },
           {
@@ -814,7 +816,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1632450000
+              "duration": 600500299
             }
           },
           {
@@ -826,8 +828,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 760352999
+              "status": "failed",
+              "duration": 781800,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
@@ -836,11 +839,11 @@
             "line": 74,
             "name": "User should see role badge \"Employee\" next to \"Khanh Mai\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:28"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 732606499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -848,7 +851,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 190699
+              "duration": 52799
             }
           }
         ],
@@ -876,7 +879,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 158100
+              "duration": 81100
             }
           },
           {
@@ -889,7 +892,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1772494799
+              "duration": 562640599
             }
           },
           {
@@ -901,8 +904,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 761095399
+              "status": "failed",
+              "duration": 848300,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
@@ -911,11 +915,11 @@
             "line": 74,
             "name": "User should see role badge \"HR Admin\" next to \"Quang Nguyen\" in Org Chart",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:28"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 730546900
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -923,7 +927,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76799
+              "duration": 55099
             }
           }
         ],
@@ -951,7 +955,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 81999
+              "duration": 114999
             }
           },
           {
@@ -964,7 +968,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1647190999
+              "duration": 592791699
             }
           },
           {
@@ -976,8 +980,9 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 787385499
+              "status": "failed",
+              "duration": 2451598,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
@@ -989,8 +994,8 @@
               "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 760737898
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1002,8 +1007,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
-              "status": "passed",
-              "duration": 718866399
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1015,8 +1020,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
-              "status": "passed",
-              "duration": 707780798
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1028,8 +1033,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
-              "status": "passed",
-              "duration": 719681299
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1041,8 +1046,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 4770372999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1054,8 +1059,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 713939998
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1067,8 +1072,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:44"
             },
             "result": {
-              "status": "passed",
-              "duration": 2747182699
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1080,8 +1085,8 @@
               "location": "src\\steps\\core\\baseSteps.ts:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 726255500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1089,7 +1094,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 165699
+              "duration": 165099
             }
           }
         ],
@@ -1117,7 +1122,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168699
+              "duration": 199500
             }
           },
           {
@@ -1130,7 +1135,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1959628298
+              "duration": 591699098
             }
           },
           {
@@ -1142,21 +1147,22 @@
               "location": "src\\steps\\core\\baseSteps.ts:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 852985000
+              "status": "failed",
+              "duration": 777000,
+              "error_message": "locator.waitFor: Target page, context or browser has been closed\n    at BasePage.clickSidebarItem (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:42:38)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:13:25)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 102,
-            "name": "User searches for \"XYZ\" in Org Chart",
+            "name": "User enters \"XYZ\" into the \"Search people\" field",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 733876600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1165,11 +1171,11 @@
             "line": 103,
             "name": "Org Chart should show no results",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:36"
+              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 725852998
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -1177,7 +1183,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 146000
+              "duration": 67800
             }
           }
         ],

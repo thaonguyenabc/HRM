@@ -45,7 +45,8 @@ export class CustomWorld extends World {
 
         // Navigate every scenario — sessionStorage is preserved on same tab (same origin)
         // With tokens in sessionStorage, MSAL loads app without redirect
-        await this.page.goto(this.config.baseUrl, { waitUntil: "networkidle" });
+        await this.page.goto(this.config.baseUrl, { waitUntil: "domcontentloaded" });
+        await this.page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
 
         const needsLogin = await this.page.getByRole("button", { name: "Sign in with MS" })
             .isVisible({ timeout: 3000 }).catch(() => false);
@@ -56,7 +57,7 @@ export class CustomWorld extends World {
             await tempLogin.enterPassword(this.config.credentials.password);
             await tempLogin.handleStaySignedIn();
             await this.page.waitForURL(/abcdigital/);
-            await this.page.waitForLoadState("networkidle");
+            await this.page.waitForLoadState("domcontentloaded");
         }
 
         this.basePage = new BasePage(this.page);

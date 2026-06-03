@@ -19,10 +19,9 @@ export class WeeklyReportPage extends BasePage {
     selectWeekTrigger = this.page
         .locator('[role="dialog"]')
         .first()
-        .getByText("Select week")
+        .getByRole("button", { name: "Select week" })
         .or(this.page.locator('[role="dialog"]').first().locator("button").filter({ hasText: "Select week" }));
     richTextEditor = this.page.locator('[role="dialog"]').first().locator('[contenteditable="true"]').first();
-    submitReportBtn = this.page.locator('[role="dialog"]').first().getByRole("button", { name: "Submit", exact: true });
     plansOnlyClickable = this.page.getByRole("checkbox", { name: /Plans Only/i }).or(this.page.locator("label").filter({ hasText: "Plans Only" }));
 
     async getVisibleRowCount(): Promise<number> {
@@ -75,12 +74,6 @@ export class WeeklyReportPage extends BasePage {
         await this.page.keyboard.press("Control+a");
         await this.page.waitForTimeout(200);
         await this.page.keyboard.type(content);
-    }
-
-    async submitReport(): Promise<void> {
-        await this.submitReportBtn.waitFor({ state: "visible" });
-        await this.submitReportBtn.click();
-        await this.page.waitForTimeout(2500);
     }
 
     // ---- Methods: Post-submit verification ----

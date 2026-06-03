@@ -26,7 +26,6 @@ export class CommonLocator {
     button = (name: string) =>
         this.page
             .getByRole("button", { name })
-            .or(this.page.getByText(name, { exact: true }))
             .or(this.page.locator("button", { hasText: name }));
 
     /* ===================== DROPDOWN / SELECT ===================== */
@@ -76,6 +75,12 @@ export class CommonLocator {
     row = (text: string) => this.page.getByRole("row", { name: text });
 
     cell = (rowText: string, column: string) => this.row(rowText).getByRole("cell", { name: column });
+
+    columnHeader = (name: string) =>
+        this.page
+            .getByRole("columnheader", { name })
+            .first()
+            .or(this.page.locator("th").filter({ hasText: name }).first());
 
     /* ===================== TEXT ===================== */
     text = (text: string) => this.page.getByText(text, { exact: true });

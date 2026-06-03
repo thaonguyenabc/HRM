@@ -14,8 +14,8 @@ Feature: Org Structure Page
     Scenario Outline: Search for an existing person in Org Chart
         Given User goes to dashboard page
         When User clicks on sidebar menu "Org Structure"
-        And User searches for "<Name>" in Org Chart
-        Then User should see "<Name>" in the Org Chart
+        And User enters "<Name>" into the "Search people" field
+        Then User verifies the "<Name>" text is "visible"
 
         Examples:
             | Name         |
@@ -99,5 +99,5 @@ Feature: Org Structure Page
     Scenario: Search for a non-existing person in Org Chart
         Given User goes to dashboard page
         When User clicks on sidebar menu "Org Structure"
-        And User searches for "XYZ" in Org Chart
+        And User enters "XYZ" into the "Search people" field
         Then Org Chart should show no results

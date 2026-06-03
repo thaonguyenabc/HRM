@@ -117,7 +117,7 @@ export class BasePage {
     //#region Button
     async clickOnBTNGeneral(name: string): Promise<void> {
         await this.pageAlready();
-        const locator = this.loc.button(name).first();
+        const locator = this.loc.button(name);
         await locator.waitFor({ state: "visible" });
         await locator.click();
         await this.pageAlready();
@@ -125,7 +125,7 @@ export class BasePage {
 
     async verifyButtonStatus(name: string, status: string): Promise<void> {
         await this.page.waitForTimeout(1000);
-        const locator = this.loc.button(name).first();
+        const locator = this.loc.button(name);
         await this.verifyElementStatus(locator, status);
     }
     //#endregion
@@ -283,10 +283,7 @@ export class BasePage {
 
     //#region Table
     async verifyColumnHeader(name: string, state: string): Promise<void> {
-        const locator = this.page
-            .getByRole("columnheader", { name })
-            .first()
-            .or(this.page.locator("th").filter({ hasText: name }).first());
+        const locator = this.loc.columnHeader(name);
         await this.verifyElementStatus(locator, state);
     }
     //#endregion

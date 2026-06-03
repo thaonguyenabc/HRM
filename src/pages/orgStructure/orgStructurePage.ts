@@ -6,24 +6,12 @@ export class OrgStructurePage extends BasePage {
         super(page);
     }
 
-    searchInput = this.page.locator('input[placeholder="Search people"]');
-    personNode = (name: string) => this.page.locator(`text="${name}"`);
     orgResultsContainer = this.page.locator(".custom-scrollbar > div");
-    profileOverview = this.page.getByText("Profile Overview");
     personRow = (name: string) =>
         this.page.locator(".flex.items-center.gap-2")
             .filter({ has: this.page.locator("span.truncate", { hasText: name }) })
             .first();
     roleBadge = (name: string, role: string) => this.personRow(name).getByText(role, { exact: true });
-
-    async searchPerson(name: string): Promise<void> {
-        await this.searchInput.waitFor({ state: "visible" });
-        await this.searchInput.fill(name);
-    }
-
-    async verifyPersonVisible(name: string): Promise<void> {
-        await expect.soft(this.personNode(name)).toBeVisible();
-    }
 
     async verifyNoResults(): Promise<void> {
         await this.orgResultsContainer.waitFor({ state: "attached" });
@@ -31,8 +19,9 @@ export class OrgStructurePage extends BasePage {
     }
 
     async clickPerson(name: string): Promise<void> {
-        await this.personNode(name).waitFor({ state: "visible", timeout: 10000 });
-        await this.personNode(name).click();
+        const locator = this.loc.text(name);
+        await locator.waitFor({ state: "visible", timeout: 10000 });
+        await locator.click();
     }
 
     async hoverPerson(name: string): Promise<void> {
@@ -61,7 +50,7 @@ export class OrgStructurePage extends BasePage {
                 }
             }
         }, name);
-        await this.page.waitForTimeout(500);
+        await this.page.waitForTimeout(2000);
     }
 
     async verifyRoleBadge(name: string, role: string): Promise<void> {
@@ -83,7 +72,7 @@ export class OrgStructurePage extends BasePage {
     }
 
     async verifyInProfileOverview(text: string): Promise<void> {
-        await this.profileOverview.waitFor({ state: "visible" });
-        await expect.soft(this.page.getByText(text).first()).toBeVisible();
+        await this.loc.containsText("Profile Overview").waitFor({ state: "visible" });
+        await expect.soft(this.loc.containsText(text).first()).toBeVisible();
     }
 }

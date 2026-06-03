@@ -1,4 +1,4 @@
-import { Given, When, Then } from "@cucumber/cucumber";
+import { When, Then } from "@cucumber/cucumber";
 import { CustomWorld } from "../../support/world";
 
 
@@ -17,10 +17,6 @@ When("User selects a week for the new report", async function (this: CustomWorld
 
 When("User fills in the weekly report content {string}", async function (this: CustomWorld, content: string) {
     await this.weeklyReportPage.fillRichTextContent(content);
-});
-
-When("User submits the weekly report", async function (this: CustomWorld) {
-    await this.weeklyReportPage.submitReport();
 });
 
 Then("User verifies the selected week appears in the list", async function (this: CustomWorld) {

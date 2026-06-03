@@ -17,14 +17,14 @@ let authenticatedContext: BrowserContext;
 // Nếu có .auth/user.json → load MS cookies → SSO auto-pass (không nhập password).
 // Nếu không có file → full SSO login (cần nhập email/password).
 // Page sau login được giữ sống để preserve sessionStorage cho tất cả tests.
-BeforeAll(async function () {
+BeforeAll({ timeout: 120000 }, async function () {
     browser = await chromium.launch({ headless: config.headless });
 
     const ctxOptions = fs.existsSync(AUTH_FILE) ? { storageState: AUTH_FILE } : {};
     const context = await browser.newContext(ctxOptions);
     const page = await context.newPage();
 
-    await page.goto(config.baseUrl, { waitUntil: "networkidle" });
+    await page.goto(config.baseUrl, { waitUntil: "domcontentloaded" });
 
     // Kiểm tra xem app có đang ở login page không
     const needsLogin = await page
@@ -39,7 +39,7 @@ BeforeAll(async function () {
         await loginPage.enterPassword(config.credentials.password);
         await loginPage.handleStaySignedIn();
         await page.waitForURL(/abcdigital/);
-        await page.waitForLoadState("networkidle");
+        await page.waitForLoadState("domcontentloaded");
 
         const dir = path.dirname(AUTH_FILE);
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });

@@ -13,14 +13,6 @@ When("User expands {string} node in the Org Chart", async function (this: Custom
     await this.orgStructurePage.expandPersonNode(name);
 });
 
-When("User searches for {string} in Org Chart", async function (this: CustomWorld, name: string) {
-    await this.orgStructurePage.searchPerson(name);
-});
-
-Then("User should see {string} in the Org Chart", async function (this: CustomWorld, name: string) {
-    await this.orgStructurePage.verifyPersonVisible(name);
-});
-
 Then("User should see {string} in profile overview", async function (this: CustomWorld, text: string) {
     await this.orgStructurePage.verifyInProfileOverview(text);
 });

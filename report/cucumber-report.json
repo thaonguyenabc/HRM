@@ -4,438 +4,398 @@
     "elements": [
       {
         "description": "",
-        "id": "org-structure-page;navigate-to-org-structure-page-successfully",
+        "id": "dashboard-home-page;verify-dashboard-layout-and-user-info",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Navigate to Org Structure page successfully",
+        "line": 8,
+        "name": "Verify dashboard layout and user info",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 247899
+              "duration": 302499
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 18953092198
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 786650700
+              "duration": 17888575399
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "User should see page title \"Organization Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 739994398
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 9,
-            "name": "User verifies the \"Hierarchy based on primary line manager relationships\" text is \"visible\"",
+            "name": "User verifies the \"Hi Thao Nguyen!\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 726064899
+              "duration": 728779499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "User verifies the \"Org Chart\" text is \"visible\"",
+            "name": "User verifies the \"Here's what's happening at ABC Digital this week.\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 710249198
+              "duration": 708896098
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "User verifies the \"Search people\" field is \"visible\"",
+            "name": "User verifies the \"Create new Report\" button is \"visible\"",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:74"
+              "location": "src\\steps\\core\\baseSteps.ts:78"
             },
             "result": {
               "status": "passed",
-              "duration": 732300199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 120700
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure1",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;search-for-an-existing-person-in-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 22,
-        "name": "Search for an existing person in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 69400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2080050300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2083788999
+              "duration": 1720748598
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "User enters \"Khanh Mai\" into the \"Search people\" field",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1788390298
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "User verifies the \"Khanh Mai\" text is \"visible\"",
+            "line": 12,
+            "name": "User verifies the \"Primary Line Manager\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 709735098
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 112599
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure2",
-            "line": 13
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;search-for-an-existing-person-in-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 23,
-        "name": "Search for an existing person in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 122600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15798208399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2031876898
+              "duration": 717321700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "User enters \"Quang Nguyen\" into the \"Search people\" field",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1773514999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
+            "line": 13,
             "name": "User verifies the \"Quang Nguyen\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 709593499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 266400
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure2",
-            "line": 13
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;view-employee-profile-from-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 40,
-        "name": "View employee profile from Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 93899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 27,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2093480599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2485191299
+              "duration": 715059100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
-            "name": "User clicks on \"Quang Nguyen\" in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2002302099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "User should see page title \"Profile\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 723580100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "User verifies the \"Profile Overview\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 719634900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "User verifies the \"Quang Nguyen\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 716879299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
+            "line": 14,
             "name": "User verifies the \"quang.nguyen@abcdigital.io\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 716387798
+              "duration": 710468799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User verifies the \"Thao Nguyen\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 711157498
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 156100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dashboard",
+            "line": 1
+          },
+          {
+            "name": "@Dashboard1",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-home-page;verify-dashboard-stats-display-valid-data",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify dashboard stats display valid data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User goes to dashboard page",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2206845999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User verifies the \"Reports This Week\" stat card shows a valid number",
+            "match": {
+              "location": "src\\steps\\dashboard\\dashboardSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 714731099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User verifies the \"Reports This Week\" stat card total matches its breakdown",
+            "match": {
+              "location": "src\\steps\\dashboard\\dashboardSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 713092399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User verifies the \"Pending Review\" stat card shows a valid number",
+            "match": {
+              "location": "src\\steps\\dashboard\\dashboardSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 711963298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "User verifies the \"Pending Review\" stat card total matches its breakdown",
+            "match": {
+              "location": "src\\steps\\dashboard\\dashboardSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 709118599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dashboard",
+            "line": 1
+          },
+          {
+            "name": "@Dashboard2",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-home-page;click-reports-this-week-stat-card-navigates-to-weekly-reports-with-this-week-filter",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Click Reports This Week stat card navigates to weekly reports with this week filter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User goes to dashboard page",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2710345498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "User clicks on the \"Reports This Week\" section",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2745856400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "User should see page title \"Weekly Reports\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 714107999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "User verifies the \"This week\" text is \"visible\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 710504999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 105000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Dashboard",
+            "line": 1
+          },
+          {
+            "name": "@Dashboard4",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-home-page;click-pending-review-stat-card-navigates-to-weekly-reports-with-pending-review-filter",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Click Pending Review stat card navigates to weekly reports with pending review filter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User goes to dashboard page",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1722205299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User clicks on the \"Pending Review\" section",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2745767299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "User should see page title \"Weekly Reports\"",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 713923399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "User verifies the \"HR Admin\" text is \"visible\"",
+            "name": "User verifies the \"Pending Review\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
-              "status": "failed",
-              "duration": 30713036899,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('HR Admin').first()\nExpected: visible\nTimeout: 30000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for getByText('HR Admin').first()\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at BasePage.verifyText (D:\\playwright-cucumber-ts\\src\\pages\\core\\basePage.ts:199:35)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\core\\baseSteps.ts:83:25)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 35,
-            "name": "User goes back",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:44"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "User should see page title \"Organization Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 714497699
             }
           },
           {
@@ -443,762 +403,152 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 160099
+              "duration": 118099
             }
           }
         ],
         "tags": [
           {
-            "name": "@OrgStructure",
+            "name": "@Dashboard",
             "line": 1
           },
           {
-            "name": "@OrgStructure3",
-            "line": 25
+            "name": "@Dashboard5",
+            "line": 30
           }
         ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "org-structure-page;view-employee-profile-for-person-under-collapsed-node",
-        "keyword": "Scenario Outline",
-        "line": 58,
-        "name": "View employee profile for person under collapsed node",
+        "id": "dashboard-home-page;click-manager-profile-then-back-and-open-create-new-report-modal",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Click manager profile then back and open Create new Report modal",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 66600
+              "duration": 81699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 44,
+            "line": 5,
             "name": "User goes to dashboard page",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 15828312998
+              "duration": 1750191499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 45,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
+            "line": 38,
+            "name": "User clicks on the Primary Line Manager card",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
+              "location": "src\\steps\\dashboard\\dashboardSteps.ts:4"
             },
             "result": {
               "status": "passed",
-              "duration": 2018815299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 46,
-            "name": "User expands \"Quang Nguyen\" node in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2744103499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 47,
-            "name": "User clicks on \"Linh Dao\" in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:4"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 10721357600,
-              "error_message": "locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('Linh Dao', { exact: true }) to be visible\u001b[22m\n\n    at OrgStructurePage.clickPerson (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:23:23)\n    at CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:5:33)"
+              "duration": 744085799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 48,
-            "name": "User should see page title \"Profile\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
+            "line": 39,
             "name": "User verifies the \"Profile Overview\" text is \"visible\"",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "User verifies the \"Linh Dao\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 51,
-            "name": "User verifies the \"linh.dao@abcdigital.io\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 52,
-            "name": "User verifies the \"Employee\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 713989399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 53,
+            "line": 40,
             "name": "User goes back",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:44"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 54,
-            "name": "User should see page title \"Organization Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
               "status": "passed",
-              "duration": 59199
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure4",
-            "line": 42
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;verify-manager-employee-hierarchy-in-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 69,
-        "name": "Verify manager-employee hierarchy in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 51299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 62,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15791341998
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 63,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2009475899
+              "duration": 2725400700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 64,
-            "name": "User expands \"Quang Nguyen\" node in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2746017899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 65,
-            "name": "User should see \"Linh Dao\" listed under \"Quang Nguyen\" in Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5728403099,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Linh Dao' }) }).first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Linh Dao' }) }).first()\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyEmployeeUnderManager (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:65:40)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:21:5)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 229499
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure5",
-            "line": 60
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;verify-manager-employee-hierarchy-in-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 70,
-        "name": "Verify manager-employee hierarchy in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 107700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 62,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2584365000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 63,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2159614599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 64,
-            "name": "User expands \"Em Dinh\" node in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2742285000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 65,
-            "name": "User should see \"Diem Nguyen\" listed under \"Em Dinh\" in Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 750925499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 148300
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure5",
-            "line": 60
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;verify-role-badge-displays-correctly-in-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 80,
-        "name": "Verify role badge displays correctly in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 116700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 74,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2060268999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 75,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2483680899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 76,
-            "name": "User should see role badge \"Employee\" next to \"Khanh Mai\" in Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5723194699,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Khanh Mai' }) }).first().getByText('Employee', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Khanh Mai' }) }).first().getByText('Employee', { exact: true })\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyRoleBadge (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:58:50)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:17:5)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 68800
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure6",
-            "line": 72
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;verify-role-badge-displays-correctly-in-org-chart",
-        "keyword": "Scenario Outline",
-        "line": 81,
-        "name": "Verify role badge displays correctly in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 50000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 74,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15848089899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 75,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000004999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 76,
-            "name": "User should see role badge \"HR Admin\" next to \"Quang Nguyen\" in Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:16"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5752157300,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Quang Nguyen' }) }).first().getByText('HR Admin', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.flex.items-center.gap-2').filter({ has: locator('span.truncate').filter({ hasText: 'Quang Nguyen' }) }).first().getByText('HR Admin', { exact: true })\u001b[22m\n\n    at Proxy.<anonymous> (D:\\playwright-cucumber-ts\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at OrgStructurePage.verifyRoleBadge (D:\\playwright-cucumber-ts\\src\\pages\\orgStructure\\orgStructurePage.ts:58:50)\n    at async CustomWorld.<anonymous> (D:\\playwright-cucumber-ts\\src\\steps\\orgStructure\\orgStructureSteps.ts:17:5)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 103700
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure6",
-            "line": 72
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;view-hover-card-details-and-navigate-to-profile",
-        "keyword": "Scenario Outline",
-        "line": 98,
-        "name": "View hover card details and navigate to profile",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 50300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 85,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2384208299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 86,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 726166299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 87,
-            "name": "User hovers over \"Khanh Mai\" in the Org Chart",
-            "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 751372799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 88,
-            "name": "User verifies the \"Management\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 713971199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 89,
-            "name": "User verifies the \"Executive Team\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 716591600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 90,
-            "name": "User verifies the \"khanh.mai@abcdigital.io\" text is \"visible\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 715014998
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 91,
-            "name": "User clicks on the \"View Profile\" button",
+            "line": 41,
+            "name": "User clicks on the \"Create new Report\" button",
             "match": {
               "location": "src\\steps\\core\\baseSteps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 4960137598
+              "duration": 4760778300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 92,
-            "name": "User should see page title \"Profile\"",
+            "line": 42,
+            "name": "User verifies the modal is \"open\"",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
+              "location": "src\\steps\\core\\baseSteps.ts:121"
             },
             "result": {
               "status": "passed",
-              "duration": 708004198
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 93,
-            "name": "User goes back",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2735712598
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 94,
-            "name": "User should see page title \"Organization Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 710919798
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 90999
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@OrgStructure",
-            "line": 1
-          },
-          {
-            "name": "@OrgStructure7",
-            "line": 83
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "org-structure-page;search-for-a-non-existing-person-in-org-chart",
-        "keyword": "Scenario",
-        "line": 101,
-        "name": "Search for a non-existing person in Org Chart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 102,
-            "name": "User goes to dashboard page",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2541320800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 103,
-            "name": "User clicks on sidebar menu \"Org Structure\"",
-            "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 747438600
+              "duration": 715860000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 104,
-            "name": "User enters \"XYZ\" into the \"Search people\" field",
+            "line": 43,
+            "name": "User verifies the \"Create Weekly Report\" text is \"visible\"",
             "match": {
-              "location": "src\\steps\\core\\baseSteps.ts:20"
+              "location": "src\\steps\\core\\baseSteps.ts:82"
             },
             "result": {
               "status": "passed",
-              "duration": 1754804298
+              "duration": 711520900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "User closes the modal",
+            "match": {
+              "location": "src\\steps\\core\\baseSteps.ts:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1449901699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 105,
-            "name": "Org Chart should show no results",
+            "line": 45,
+            "name": "User verifies the modal is \"closed\"",
             "match": {
-              "location": "src\\steps\\orgStructure\\orgStructureSteps.ts:24"
+              "location": "src\\steps\\core\\baseSteps.ts:121"
             },
             "result": {
               "status": "passed",
-              "duration": 718696600
+              "duration": 716888300
             }
           },
           {
@@ -1206,33 +556,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 113699
+              "duration": 87700
             }
           }
         ],
         "tags": [
           {
-            "name": "@OrgStructure",
+            "name": "@Dashboard",
             "line": 1
           },
           {
-            "name": "@OrgStructure8",
-            "line": 100
+            "name": "@Dashboard3",
+            "line": 36
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "org-structure-page",
+    "id": "dashboard-home-page",
     "line": 2,
     "keyword": "Feature",
-    "name": "Org Structure Page",
+    "name": "Dashboard Home Page",
     "tags": [
       {
-        "name": "@OrgStructure",
+        "name": "@Dashboard",
         "line": 1
       }
     ],
-    "uri": "src\\features\\orgStructure\\orgStructure.feature"
+    "uri": "src\\features\\dashboard\\dashboard.feature"
   }
 ]

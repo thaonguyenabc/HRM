@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ReportsMeResponse",
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["statusCode", "message", "data"],
+    "properties": {
+        "statusCode": { "type": "integer" },
+        "message": { "type": "string" },
+        "data": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": ["data", "total"],
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": { "type": "object" }
+                },
+                "total": { "type": "integer" }
+            }
+        }
+    }
+}

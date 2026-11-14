@@ -21,7 +21,7 @@ BeforeAll({ timeout: 120000 }, async function () {
     browser = await chromium.launch({ headless: config.headless });
 
     const ctxOptions = fs.existsSync(AUTH_FILE) ? { storageState: AUTH_FILE } : {};
-    const context = await browser.newContext(ctxOptions);
+    const context = await browser.newContext({ ...ctxOptions, viewport: { width: 1440, height: 900 } });
     const page = await context.newPage();
 
     await page.goto(config.baseUrl, { waitUntil: "domcontentloaded" });
